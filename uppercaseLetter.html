@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = 'c';
+    let UPPER = 'THE QUICK BROWN FOX';
+    let LOWER = 'the quick brown fox';
+    let arr = [];
+
+    for (let i = 0; i < str.length; i++) {
+        if (UPPER.indexOf(str[i]) !== -1) {
+
+            arr.push(str[i].toLowerCase());
+        } else if (LOWER.indexOf(str[i]) !== -1) {
+
+            arr.push((str[i].toUpperCase()));
+
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    document.write(arr.join(''));
+</script>
+
+</body>
+</html>
